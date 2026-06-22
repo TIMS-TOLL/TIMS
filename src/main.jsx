@@ -8,7 +8,7 @@ import "./styles/tims.css";
 
 import "./assets/styles.css";
 
-import { AuthProvider } from "./context/AuthContext";
+import { AuthProvider } from "./context/authContext";
 
 ReactDOM.createRoot(
 document.getElementById("root")
