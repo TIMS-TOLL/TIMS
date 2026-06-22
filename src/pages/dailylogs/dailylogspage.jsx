@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { supabase } from "../../services/supabase";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../../context/authcontext";
 
 function DailyLogsPage() {
   const [logs, setLogs] = useState([]);

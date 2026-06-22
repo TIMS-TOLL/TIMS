@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "../../services/supabase";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../../context/authcontext";
 
 function LoginPage() {
   const navigate = useNavigate();

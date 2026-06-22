@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { supabase } from "../../services/supabase";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../../context/authcontext";
 
 function DashboardPage() {
   const [siteCount, setSiteCount] = useState(0);
