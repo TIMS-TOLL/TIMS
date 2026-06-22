@@ -14,7 +14,7 @@ import WorkStatusPage from "../pages/workstatus/workstatuspage";
 import ReportsPage from "../pages/reports/reportspage";
 import UsersPage from "../pages/users/userspage";
 
-import ProtectedRoute from "../components/ProtectedRoute";
+import ProtectedRoute from "../components/protectedroute";
 
 function AppRoutes() {
   return (
