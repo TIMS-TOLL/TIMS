@@ -1,18 +1,18 @@
 import { Routes, Route } from "react-router-dom";
 
-import LoginPage from "../pages/login/LoginPage";
-import DashboardPage from "../pages/dashboard/DashboardPage";
-import MainLayout from "../layouts/MainLayout";
-import SitesPage from "../pages/sites/SitesPage";
-import LanesPage from "../pages/lanes/LanesPage";
-import EquipmentPage from "../pages/equipment/EquipmentPage";
-import InventoryPage from "../pages/inventory/InventoryPage";
-import InstallationsPage from "../pages/installations/InstallationsPage";
-import CableTrackingPage from "../pages/cables/CableTrackingPage";
-import DailyLogsPage from "../pages/dailylogs/DailyLogsPage";
-import WorkStatusPage from "../pages/workstatus/WorkStatusPage";
-import ReportsPage from "../pages/reports/ReportsPage";
-import UsersPage from "../pages/users/UsersPage";
+import LoginPage from "../pages/login/loginpage";
+import DashboardPage from "../pages/dashboard/dashboardpage";
+import MainLayout from "../layouts/mainlayout";
+import SitesPage from "../pages/sites/sitespage";
+import LanesPage from "../pages/lanes/lanespage";
+import EquipmentPage from "../pages/equipment/equipmentpage";
+import InventoryPage from "../pages/inventory/inventorypage";
+import InstallationsPage from "../pages/installations/installationspage";
+import CableTrackingPage from "../pages/cables/cabletrackingpage";
+import DailyLogsPage from "../pages/dailylogs/dailylogspage";
+import WorkStatusPage from "../pages/workstatus/workstatuspage";
+import ReportsPage from "../pages/reports/reportspage";
+import UsersPage from "../pages/users/userspage";
 
 import ProtectedRoute from "../components/ProtectedRoute";
 
@@ -49,12 +49,14 @@ function AppRoutes() {
   }
 />
         <Route
-          path="/lanes"element={
-        <ProtectedRoute>
-            allowedRoles={[
-        "Admin",
-        "Manager",
-      ]}
+          path="/lanes"
+          element={
+            <ProtectedRoute
+              allowedRoles={[
+                "Admin",
+                "Manager",
+              ]}
+            >
               <LanesPage />
             </ProtectedRoute>
           }
@@ -63,11 +65,12 @@ function AppRoutes() {
         <Route
           path="/equipment"
           element={
-            <ProtectedRoute>
+            <ProtectedRoute
               allowedRoles={[
-        "Admin",
-        "Manager",
-      ]}
+                "Admin",
+                "Manager",
+              ]}
+            >
               <EquipmentPage />
             </ProtectedRoute>
           }
@@ -89,12 +92,13 @@ function AppRoutes() {
         <Route
           path="/installations"
           element={
-            <ProtectedRoute>
+            <ProtectedRoute
               allowedRoles={[
         "Admin",
         "Manager",
         "Engineer",
       ]}
+      >
               <InstallationsPage />
             </ProtectedRoute>
           }
@@ -103,12 +107,13 @@ function AppRoutes() {
         <Route
           path="/cable-tracking"
           element={
-            <ProtectedRoute>
+            <ProtectedRoute
               allowedRoles={[
         "Admin",
         "Manager",
         "Engineer",
       ]}
+      >
               <CableTrackingPage />
             </ProtectedRoute>
           }
@@ -117,12 +122,13 @@ function AppRoutes() {
         <Route
           path="/dailylogs"
           element={
-            <ProtectedRoute>
+            <ProtectedRoute
               allowedRoles={[
         "Admin",
         "Manager",
         "Engineer",
       ]}
+      >
               <DailyLogsPage />
             </ProtectedRoute>
           }
@@ -131,12 +137,13 @@ function AppRoutes() {
         <Route
           path="/workstatus"
           element={
-            <ProtectedRoute>
+            <ProtectedRoute
               allowedRoles={[
         "Admin",
         "Manager",
         "Engineer",
       ]}
+      >
               <WorkStatusPage />
             </ProtectedRoute>
           }
@@ -145,11 +152,12 @@ function AppRoutes() {
         <Route
           path="/reports"
           element={
-            <ProtectedRoute>
+            <ProtectedRoute
               allowedRoles={[
         "Admin",
         "Manager",
       ]}
+      >
               <ReportsPage />
             </ProtectedRoute>
           }
